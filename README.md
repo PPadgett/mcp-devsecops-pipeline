@@ -22,6 +22,13 @@ This project is in its early, exploratory phase and is open for collaboration fr
 
 Your input will be crucial in defining the architecture, prototyping key components, and establishing a roadmap for ensuring robust DevSecOps integration.
 
+## CI/CD Pipeline Guide
+
+For an in-depth look at our CI/CD strategies—including pipelines for scripting, compiled, and interpreted languages—please see our [CI/CD Pipeline Stages for Scripting, Compiled, and Interpreted Languages](./CI_CD_PIPELINES.md).
+
+This guide includes detailed stage explanations, Mermaid diagrams, and code examples to help you understand the testing and deployment processes for different types of projects.
+
+
 ## Project Roadmap
 
 Our roadmap outlines key areas for exploration and development:
