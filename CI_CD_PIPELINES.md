@@ -265,11 +265,23 @@ Deciding which CI/CD pipeline structure to use depends on the nature of your pro
 
 ```mermaid
 flowchart TD
-    A([Start: Identify project type]) --> B{Does the code need to be compiled?};
-    B -->|Yes| C[Use a **Compiled Languages** pipeline<br/>e.g., includes build & artifact stages];
-    B -->|No| D{Is it a standalone script or an application?};
-    D -->|Standalone script<br/>e.g., Bash, PowerShell| E[Use a **Scripting Languages** pipeline<br/>focus on linting & testing, no build];
-    D -->|Full application<br/>e.g., Python, JS, Ruby, etc| F[Use an **Interpreted Languages** pipeline<br/>dependency install, packaging, extensive testing];
+    A([🔍 Start: Identify project type]) --> B{❓ Does the code need to be compiled?};
+    B -->|Yes| C[⚙️ Use a **Compiled Languages** pipeline<br/>e.g., includes build & artifact stages];
+    B -->|No| D{❓ Is it a standalone script or an application?};
+    D -->|Standalone script<br/>e.g., Bash, PowerShell| E[🖥️ Use a **Scripting Languages** pipeline<br/>focus on linting & testing, no build];
+    D -->|Full application<br/>e.g., Python, JS, Ruby, etc| F[🐍 Use an **Interpreted Languages** pipeline<br/>dependency install, packaging, extensive testing];
+
+    classDef start fill:#cce5ff,stroke:#0066cc,stroke-width:2px;
+    classDef decision fill:#ffebcc,stroke:#cc7a00,stroke-width:2px;
+    classDef compiled fill:#d4edda,stroke:#28a745,stroke-width:2px;
+    classDef scripting fill:#f8d7da,stroke:#dc3545,stroke-width:2px;
+    classDef interpreted fill:#fff3cd,stroke:#ffc107,stroke-width:2px;
+
+    class A start;
+    class B,D decision;
+    class C compiled;
+    class E scripting;
+    class F interpreted;
 ```
 
 In general:  
