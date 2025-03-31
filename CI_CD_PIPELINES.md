@@ -280,31 +280,6 @@ flowchart TD
     class C,E,F recommended;
 ```
 
-```mermaid
-flowchart TD
-    A([Code or Feature Change]) --> B{Has external dependencies?};
-    B --> |No, self-contained| U[Focus on Unit Testing];
-    B --> |Yes, interacts with DB, API, etc.| C{Are dependencies available for testing?};
-    C --> |Yes - internal components/DB| IT[Include Integration Tests with real services/DB];
-    C --> |No - 3rd-party or not easily testable| ST[Use Stubs/Mocks for those external services in tests];
-    ST --> IT;
-    U --> D{Any public API or interface contracts?};
-    IT --> D;
-    D --> |Yes - microservice APIs or modules| CT[Add Contract Tests for interface expectations];
-    D --> |No| E{Complex user flows or UI involved?};
-    CT --> E;
-    IT --> E;
-    E --> |Yes - end-user scenarios| E2E[Add End-to-End Tests for critical user journeys];
-    E --> |No| F{Performance or load concerns?};
-    E2E --> F;
-    F --> |Yes| PT[Include Performance/Load Testing in pipeline];
-    F --> |No| G{High security requirements?};
-    PT --> G;
-    G --> |Yes| DT[Include Dynamic Security Testing DAST on staging];
-    G --> |No| H[Continue to deployment if all tests pass];
-    DT --> H;
-```
-
 In general:  
 
 - **Compiled pipeline** – Choose this if your project is in a language that produces a binary or artifact, since the pipeline will include a compile/build stage. For example, a Java service or Go CLI tool needs compilation as part of CI ([Best Practices for Multi-Project Continuous Integration and Deployment](https://bssw.io/blog_posts/best-practices-for-multi-project-continuous-integration-and-deployment#:~:text=together%20imparts%20advantages%20over%20considering,code%20smell)). This pipeline type is characterized by a Build stage and often more extensive post-build testing (because compiled projects tend to be larger systems).  
