@@ -24,9 +24,9 @@ Your input will be crucial in defining the architecture, prototyping key compone
 
 ## CI/CD Pipeline Guide
 
-For an in-depth look at our CI/CD strategies—including pipelines for scripting, compiled, and interpreted languages—please see our [CI/CD Pipeline Stages for Scripting, Compiled, and Interpreted Languages](./CI_CD_PIPELINES.md).
+For an in-depth look at our CI/CD strategies—including pipelines for scripting, compiled, and interpreted languages—please see our [CI/CD Pipeline Stages for Scripting, Compiled, and Interpreted Languages](./CI_CD_PIPELINES.md) and/or [Comprehensive CI/CD Pipeline Testing and Validation Guide](./CI_CD_Validation_Guide.md).
 
-This guide includes detailed stage explanations, Mermaid diagrams, and code examples to help you understand the testing and deployment processes for different types of projects.
+These guide includes detailed stage explanations, Mermaid diagrams, and code examples to help you understand the testing and deployment processes for different types of projects.
 
 
 ## Project Roadmap
