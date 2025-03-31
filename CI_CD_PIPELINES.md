@@ -1,7 +1,3 @@
-Great! I’ll create a full structured guide in Markdown format, including Mermaid diagrams, detailed stage explanations, and practical code examples. I’ll also include best practices and decision trees to help users choose the right CI/CD path based on their project.
-
-I'll get started and let you know when it’s ready to review.
-
 # CI/CD Pipeline Stages for Scripting, Compiled, and Interpreted Languages
 
 Continuous Integration and Continuous Delivery/Deployment (CI/CD) pipelines are automated workflows that build, test, and deploy code changes rapidly and consistently ([CI/CD Pipelines Explained: Everything You Need to Know](https://www.techtarget.com/searchsoftwarequality/CI-CD-pipelines-explained-Everything-you-need-to-know#:~:text=What%20are%20the%20stages%20of,a%20CI%2FCD%20pipeline)). However, the exact stages in a CI/CD pipeline can vary depending on the type of code being developed. This guide breaks down **CI/CD pipeline stages** for three major categories of programming projects:
