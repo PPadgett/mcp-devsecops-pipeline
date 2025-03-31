@@ -1,8 +1,3 @@
-Below is the updated `README.md` file for your repository, now named **`mcp-devsecops-pipeline`**, with a short description and the MIT License selected to encourage community contributions.
-
----
-
-```markdown
 # mcp-devsecops-pipeline
 
 _A framework leveraging the Model Context Protocol (MCP) to enforce DevSecOps best practices in AI-generated code through dynamic testing pipelines._
