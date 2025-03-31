@@ -273,15 +273,11 @@ flowchart TD
 
     classDef start fill:#cce5ff,stroke:#0066cc,stroke-width:2px;
     classDef decision fill:#ffebcc,stroke:#cc7a00,stroke-width:2px;
-    classDef compiled fill:#d4edda,stroke:#28a745,stroke-width:2px;
-    classDef scripting fill:#f8d7da,stroke:#dc3545,stroke-width:2px;
-    classDef interpreted fill:#fff3cd,stroke:#ffc107,stroke-width:2px;
+    classDef recommended fill:#c8f7c5,stroke:#2d882d,stroke-width:2px;
 
     class A start;
     class B,D decision;
-    class C compiled;
-    class E scripting;
-    class F interpreted;
+    class C,E,F recommended;
 ```
 
 In general:  
