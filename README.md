@@ -82,4 +82,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Acknowledgments
 
-This project leverages the Model Context Protocol (MCP) to ensure that LLMs and agentic tools comply with DevSecOps best practices during code generation. For more information on MCP, please refer to [Anthropic's Model Context Protocol introduction]([https://www.anthropic.com](https://docs.anthropic.com/en/docs/agents-and-tools/mcp)
+This project leverages the Model Context Protocol (MCP) to ensure that LLMs and agentic tools comply with DevSecOps best practices during code generation. For more information on MCP, please refer to [Anthropic's Model Context Protocol (MCP) Introduction](https://docs.anthropic.com/en/docs/agents-and-tools/mcp)
